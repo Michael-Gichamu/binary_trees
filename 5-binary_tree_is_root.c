@@ -6,16 +6,11 @@
  *
  * Return: If the node is a root - 1.
  *         Otherwise - 0.
- *
- * Description: This function checks if a given node is the root of a binary tree
- *              by verifying if the node is not NULL and has no parent.
  */
 int binary_tree_is_root(const binary_tree_t *node)
 {
-    // Check if node is NULL or has a parent
-    if (node == NULL || node->parent != NULL)
-        return 0;
+	if (node == NULL || node->parent != NULL)
+		return (0);
 
-    return 1;
+	return (1);
 }
-
